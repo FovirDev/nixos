@@ -13,9 +13,16 @@ in {
     history.size = 10000;
     syntaxHighlighting.enable = true;
     shellAliases = {
+      cb = "cargo build";
+      cbr = "cargo build --release";
+      cbrv = "cargo build --release --verbose";
+      cbv = "cargo build --verbose";
       cf = "cargo fix --allow-dirty --allow-staged";
       cp = "cp -v";
       cr = "cargo run";
+      crv = "cargo run --verbose";
+      ct = "cargo test";
+      ctv = "cargo test --verbose";
       gc = "git commit --verbose -s";
       gfo = "git fetch origin";
       gfu = "git fetch upstream";
