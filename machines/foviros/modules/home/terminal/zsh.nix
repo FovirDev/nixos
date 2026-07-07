@@ -19,7 +19,7 @@ in
       cbr = "cargo build --release";
       cbrv = "cargo build --release --verbose";
       cbv = "cargo build --verbose";
-      cf = "cargo fix --allow-dirty --allow-staged";
+      cf = "cargo fix --allow-dirty --allow-staged --tests";
       cp = "cp -v";
       cr = "cargo run";
       crv = "cargo run --verbose";
