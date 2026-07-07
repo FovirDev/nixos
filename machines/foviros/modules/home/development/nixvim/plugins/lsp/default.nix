@@ -13,7 +13,7 @@
     ./just.nix
     ./lemminx.nix
     ./ltex.nix
-    ./nil.nix
+    ./nixd.nix
     ./pyright.nix
     ./rust_analyzer.nix
     ./sqls.nix
