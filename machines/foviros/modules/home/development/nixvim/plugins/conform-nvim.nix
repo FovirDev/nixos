@@ -15,7 +15,7 @@
         "cpp" = ["clang_format"];
         "go" = ["goimports" "gofumpt"];
         "java" = ["google-java-format"];
-        "nix" = ["alejandra"];
+        "nix" = ["nixfmt"];
         "python" = ["black"];
         "rust" = ["rustfmt"];
         "sql" = ["pg_format"];

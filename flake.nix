@@ -51,10 +51,10 @@
       (system: {
         default = clan-core.inputs.nixpkgs.legacyPackages.${system}.mkShell {
           packages = with clan-core.inputs.nixpkgs.legacyPackages.${system}; [
-            alejandra
             clan-core.packages.${system}.clan-cli
             deadnix
             just
+            nixfmt
             pre-commit
             sops
           ];

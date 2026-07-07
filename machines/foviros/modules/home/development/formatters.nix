@@ -1,13 +1,13 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    alejandra
     black
     google-java-format
+    nixfmt
+    pgformatter
     prettier
     prettier-plugin-go-template
     taplo
     xmlstarlet
-    pgformatter
   ];
 
   home.file = {

@@ -53,7 +53,7 @@ update-local host:
 format:
   # Use alejandra and deadnix to format code
   deadnix -e
-  alejandra .
+  find . -type f -name '*.nix' -exec nixfmt {} +
 
 check host:
   # Check whether configurations are valid.
