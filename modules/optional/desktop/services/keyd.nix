@@ -1,9 +1,9 @@
-{...}: {
+{ ... }: {
   services.keyd = {
     enable = true;
 
     keyboards.default = {
-      ids = ["*"];
+      ids = [ "*" ];
       settings = {
         main = {
           rightalt = "esc";

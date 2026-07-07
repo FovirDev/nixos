@@ -1,5 +1,5 @@
-{username}: {
-  home-manager.users.${username} = {config, ...}: {
+{ username }: {
+  home-manager.users.${username} = { config, ... }: {
     xdg = {
       enable = true;
 
@@ -24,50 +24,53 @@
           XDG_SCREENSHOTS_DIR = "${config.xdg.userDirs.pictures}/Screenshots";
         };
       };
-      mimeApps = let
-        archiver = ["peazip.desktop"];
-        browser = ["librewolf.desktop"];
-        filemanager = ["nemo.desktop"];
-        image-viewer = ["oculante.desktop"];
-        libreoffice-calc = ["libreoffice-calc.desktop"];
-        libreoffice-presentation = ["libreoffice-impress.desktop"];
-        libreoffice-writer = ["libreoffice-writer.desktop"];
-        video-player = ["mpv.desktop"];
-      in {
-        enable = true;
+      mimeApps =
+        let
+          archiver = [ "peazip.desktop" ];
+          browser = [ "librewolf.desktop" ];
+          filemanager = [ "nemo.desktop" ];
+          image-viewer = [ "oculante.desktop" ];
+          libreoffice-calc = [ "libreoffice-calc.desktop" ];
+          libreoffice-presentation = [ "libreoffice-impress.desktop" ];
+          libreoffice-writer = [ "libreoffice-writer.desktop" ];
+          video-player = [ "mpv.desktop" ];
+        in
+        {
+          enable = true;
 
-        defaultApplications = {
-          "x-scheme-handler/about" = filemanager;
-          "x-scheme-handler/ftp" = filemanager;
-          "inode/directory" = filemanager;
+          defaultApplications = {
+            "x-scheme-handler/about" = filemanager;
+            "x-scheme-handler/ftp" = filemanager;
+            "inode/directory" = filemanager;
 
-          "image/*" = image-viewer;
-          "image/avif" = image-viewer;
-          "image/gif" = image-viewer;
-          "image/jpeg" = image-viewer;
-          "image/png" = image-viewer;
-          "image/webp" = image-viewer;
+            "image/*" = image-viewer;
+            "image/avif" = image-viewer;
+            "image/gif" = image-viewer;
+            "image/jpeg" = image-viewer;
+            "image/png" = image-viewer;
+            "image/webp" = image-viewer;
 
-          "audio/*" = video-player;
-          "video/*" = video-player;
+            "audio/*" = video-player;
+            "video/*" = video-player;
 
-          "application/pdf" = browser;
-          "application/rss+xml" = browser;
-          "text/html" = browser;
-          "x-scheme-handler/http" = browser;
-          "x-scheme-handler/https" = browser;
+            "application/pdf" = browser;
+            "application/rss+xml" = browser;
+            "text/html" = browser;
+            "x-scheme-handler/http" = browser;
+            "x-scheme-handler/https" = browser;
 
-          "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = libreoffice-writer;
-          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = libreoffice-calc;
-          "application/vnd.openxmlformats-officedocument.presentationml.presentation" = libreoffice-presentation;
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = libreoffice-writer;
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = libreoffice-calc;
+            "application/vnd.openxmlformats-officedocument.presentationml.presentation" =
+              libreoffice-presentation;
 
-          "application/gzip" = archiver;
-          "application/vnd.rar" = archiver;
-          "application/x-7z-compressed" = archiver;
-          "application/x-tar" = archiver;
-          "application/zip" = archiver;
+            "application/gzip" = archiver;
+            "application/vnd.rar" = archiver;
+            "application/x-7z-compressed" = archiver;
+            "application/x-tar" = archiver;
+            "application/zip" = archiver;
+          };
         };
-      };
     };
   };
 }

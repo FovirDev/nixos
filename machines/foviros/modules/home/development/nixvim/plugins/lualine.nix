@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.lualine = {
     enable = true;
 
@@ -13,7 +13,9 @@
             cond.__raw = ''
               require("noice").api.status.command.has
             '';
-            color = {fg = "#ff9e64";};
+            color = {
+              fg = "#ff9e64";
+            };
           }
 
           "encoding"

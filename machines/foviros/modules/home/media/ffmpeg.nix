@@ -1,3 +1,3 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.ffmpeg-full];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.ffmpeg-full ];
 }

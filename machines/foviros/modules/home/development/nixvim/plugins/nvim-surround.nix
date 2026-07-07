@@ -1,10 +1,13 @@
-{...}: {
+{ ... }: {
   plugins.nvim-surround = {
     enable = true;
 
     settings.surrounds = {
       "(" = {
-        add = ["(" ")"];
+        add = [
+          "("
+          ")"
+        ];
         delete = "^(. ?)().-( ?.)()$";
         find.__raw = ''
           function()
@@ -13,7 +16,10 @@
         '';
       };
       "[" = {
-        add = ["[" "]"];
+        add = [
+          "["
+          "]"
+        ];
         delete = "^(. ?)().-( ?.)()$";
         find.__raw = ''
           function()
@@ -22,7 +28,10 @@
         '';
       };
       "{" = {
-        add = ["{" "}"];
+        add = [
+          "{"
+          "}"
+        ];
         delete = "^(. ?)().-( ?.)()$";
         find.__raw = ''
           function()
@@ -31,7 +40,10 @@
         '';
       };
       "<" = {
-        add = ["<" ">"];
+        add = [
+          "<"
+          ">"
+        ];
         delete = "^(. ?)().-( ?.)()$";
         find.__raw = ''
           function()
@@ -46,7 +58,7 @@
     {
       action = "<Plug>(nvim-surround-visual)";
       key = "S";
-      mode = ["x"];
+      mode = [ "x" ];
       options.desc = "[S]urround";
     }
   ];

@@ -6,13 +6,13 @@
     # Define machines here.
     fovirbox = {
       deploy.targetHost = "fovirbox";
-      tags = [];
+      tags = [ ];
     };
     foviros = {
     };
     iceyeah = {
       deploy.targetHost = "vps";
-      tags = [];
+      tags = [ ];
     };
   };
 }

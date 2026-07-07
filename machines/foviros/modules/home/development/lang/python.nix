@@ -1,3 +1,3 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.python314];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.python314 ];
 }

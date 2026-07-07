@@ -1,3 +1,3 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.localsend];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.localsend ];
 }

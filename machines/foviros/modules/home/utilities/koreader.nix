@@ -1,5 +1,5 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.koreader];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.koreader ];
   xdg.desktopEntries.koreader = {
     exec = "koreader %u";
     icon = "koreader";

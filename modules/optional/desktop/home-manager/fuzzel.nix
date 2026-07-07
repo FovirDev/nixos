@@ -1,6 +1,8 @@
-{username}: {
-  home-manager.users.${username} = {lib, ...}:
-    with lib; {
+{ username }: {
+  home-manager.users.${username} =
+    { lib, ... }:
+    with lib;
+    {
       programs.fuzzel = {
         enable = true;
 
@@ -30,6 +32,6 @@
           };
         };
       };
-      wayland.windowManager.hyprland.settings.bind = ["ALT,SPACE,exec,fuzzel"];
+      wayland.windowManager.hyprland.settings.bind = [ "ALT,SPACE,exec,fuzzel" ];
     };
 }

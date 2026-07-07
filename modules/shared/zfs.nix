@@ -3,9 +3,10 @@
   pkgs,
   ...
 }:
-with lib; {
+with lib;
+{
   boot = {
-    kernelParams = ["zfs_force=1"];
+    kernelParams = [ "zfs_force=1" ];
     zfs = {
       forceImportRoot = false;
       devNodes = "/dev/disk/by-path";

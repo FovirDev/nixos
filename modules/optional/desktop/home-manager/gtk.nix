@@ -1,4 +1,4 @@
-{username}: {pkgs, ...}: {
+{ username }: { pkgs, ... }: {
   home-manager.users.${username} = {
     dconf.settings = {
       "org/gnome/desktop/interface" = {

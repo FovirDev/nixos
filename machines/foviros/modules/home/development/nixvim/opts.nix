@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   extraConfigVim = ''
     set clipboard+=unnamedplus
   '';
@@ -56,5 +56,7 @@
     guifont = "JetBrainsMono Nerd Font Mono";
   };
 
-  filetype.extension = {"tmpl" = "gotmpl";};
+  filetype.extension = {
+    "tmpl" = "gotmpl";
+  };
 }

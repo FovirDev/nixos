@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   # Syntax highlight.
   plugins.treesitter = {
     enable = true;

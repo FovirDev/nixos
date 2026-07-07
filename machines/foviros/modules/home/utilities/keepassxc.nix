@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   programs.keepassxc.enable = true;
   services.ssh-agent.enable = true;
 
@@ -67,10 +68,12 @@
     };
   };
 
-  wayland.windowManager.hyprland.settings = let
-    keepassxc = "keepassxc";
-  in {
-    exec-once = [keepassxc];
-    windowrule = ["workspace special, match:class .*${keepassxc}.*"];
-  };
+  wayland.windowManager.hyprland.settings =
+    let
+      keepassxc = "keepassxc";
+    in
+    {
+      exec-once = [ keepassxc ];
+      windowrule = [ "workspace special, match:class .*${keepassxc}.*" ];
+    };
 }

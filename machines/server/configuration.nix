@@ -1,5 +1,5 @@
-{...}: {
-  boot.kernelParams = ["zfs.zfs_arc_max=2147483648"];
+{ ... }: {
+  boot.kernelParams = [ "zfs.zfs_arc_max=2147483648" ];
   disko.devices.disk.main.device = "/dev/disk/by-path/";
   networking.hostId = "00000000";
   services.openssh.ports = 22;

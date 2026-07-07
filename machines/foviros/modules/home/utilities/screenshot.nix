@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   home = {
     packages = with pkgs; [
       grim
@@ -43,14 +43,16 @@
   };
 
   wayland.windowManager.hyprland.settings = {
-    bind = let
-      screenshot-command = "screenshot-area";
-      ocr-command = "screenshot-ocr";
-    in [
-      "$mod,S,exec,${screenshot-command}"
-      ",Print,exec,${screenshot-command}"
-      "$mod,O,exec,${ocr-command}"
-    ];
-    layerrule = ["animation fade, match:namespace .*selection.*"];
+    bind =
+      let
+        screenshot-command = "screenshot-area";
+        ocr-command = "screenshot-ocr";
+      in
+      [
+        "$mod,S,exec,${screenshot-command}"
+        ",Print,exec,${screenshot-command}"
+        "$mod,O,exec,${ocr-command}"
+      ];
+    layerrule = [ "animation fade, match:namespace .*selection.*" ];
   };
 }

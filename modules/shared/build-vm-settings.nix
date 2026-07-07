@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   virtualisation.vmVariant = {
     virtualisation = {
       memorySize = 8192;

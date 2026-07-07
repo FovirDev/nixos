@@ -1,3 +1,3 @@
-{lib, ...}: {
+{ lib, ... }: {
   networking.useDHCP = lib.mkForce true;
 }

@@ -1,7 +1,9 @@
-{lib, ...}: let
+{ lib, ... }:
+let
   disk = "/dev/disk/by-path/virtio-pci-0000:00:04.0";
-in {
-  boot.kernelParams = ["zfs.zfs_arc_max=2147483648"];
+in
+{
+  boot.kernelParams = [ "zfs.zfs_arc_max=2147483648" ];
   boot.loader.limine.biosDevice = lib.mkForce disk;
   disko.devices.disk.main.device = disk;
   networking.hostId = "007f0100";

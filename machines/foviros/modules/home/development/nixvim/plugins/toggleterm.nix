@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.toggleterm = {
     enable = true;
 
@@ -8,21 +8,23 @@
       open_mapping = "[[<C-`>]]";
       persist_size = false;
 
-      float_opts = let
-        scale = "0.9";
-      in {
-        border = "rounded";
-        height.__raw = ''
-          function(term)
-            return math.floor(vim.o.lines * ${scale})
-          end
-        '';
-        width.__raw = ''
-          function(term)
-            return math.floor(vim.o.columns * ${scale})
-          end
-        '';
-      };
+      float_opts =
+        let
+          scale = "0.9";
+        in
+        {
+          border = "rounded";
+          height.__raw = ''
+            function(term)
+              return math.floor(vim.o.lines * ${scale})
+            end
+          '';
+          width.__raw = ''
+            function(term)
+              return math.floor(vim.o.columns * ${scale})
+            end
+          '';
+        };
     };
   };
 

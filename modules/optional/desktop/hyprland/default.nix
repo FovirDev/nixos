@@ -1,22 +1,23 @@
 {
   username,
-  monitor-config ? [],
-}: {
+  monitor-config ? [ ],
+}:
+{
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
   };
 
   imports = [
-    (import ../../fcitx5.nix {inherit username;})
-    (import ../home-manager {inherit username;})
+    (import ../../fcitx5.nix { inherit username; })
+    (import ../home-manager { inherit username; })
     ../../fonts.nix
     ../services
   ];
 
-  home-manager.users.${username} = {pkgs, ...}: {
+  home-manager.users.${username} = { pkgs, ... }: {
     imports = [
-      (import ./hyprland.nix {inherit monitor-config;})
+      (import ./hyprland.nix { inherit monitor-config; })
       ./hyprlock.nix
       ./hyprpaper.nix
       ./hyprshell

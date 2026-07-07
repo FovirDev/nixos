@@ -3,11 +3,11 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   cfg = config.services.flapalerted;
 
-  inherit
-    (lib)
+  inherit (lib)
     mkEnableOption
     mkOption
     mkIf
@@ -15,7 +15,8 @@
     optional
     concatStringsSep
     ;
-in {
+in
+{
   options.services.flapalerted = {
     enable = mkEnableOption "flapalerted BGP flap detection service";
 
@@ -145,13 +146,13 @@ in {
       # ── Webhook ────────────────────────────────────────────────
       webhookUrlStart = mkOption {
         type = types.listOf types.str;
-        default = [];
+        default = [ ];
         description = "Webhook URLs triggered when a flap event starts.";
       };
 
       webhookUrlEnd = mkOption {
         type = types.listOf types.str;
-        default = [];
+        default = [ ];
         description = "Webhook URLs triggered when a flap event ends.";
       };
 
@@ -170,7 +171,7 @@ in {
 
     extraFlags = mkOption {
       type = types.listOf types.str;
-      default = [];
+      default = [ ];
     };
   };
 
@@ -179,50 +180,42 @@ in {
       s = cfg.settings;
 
       args =
-        []
+        [ ]
         # ── core / BGP
-        ++ optional (s.asn != null)
-        "-asn=${toString s.asn}"
-        ++ optional (s.bgpListenAddress != null)
-        "-bgpListenAddress=${s.bgpListenAddress}"
-        ++ optional (s.routeChangeCounter != null)
-        "-routeChangeCounter=${toString s.routeChangeCounter}"
-        ++ optional (s.expiryRouteChangeCounter != null)
-        "-expiryRouteChangeCounter=${toString s.expiryRouteChangeCounter}"
-        ++ optional (s.overThresholdTarget != null)
-        "-overThresholdTarget=${toString s.overThresholdTarget}"
-        ++ optional (s.underThresholdTarget != null)
-        "-underThresholdTarget=${toString s.underThresholdTarget}"
-        ++ optional (s.importLimitThousands != null)
-        "-importLimitThousands=${toString s.importLimitThousands}"
-        ++ optional (s.maxPathHistory != null)
-        "-maxPathHistory=${toString s.maxPathHistory}"
-        ++ optional (s.routerID != null)
-        "-routerID=${s.routerID}"
+        ++ optional (s.asn != null) "-asn=${toString s.asn}"
+        ++ optional (s.bgpListenAddress != null) "-bgpListenAddress=${s.bgpListenAddress}"
+        ++ optional (s.routeChangeCounter != null) "-routeChangeCounter=${toString s.routeChangeCounter}"
+        ++ optional (
+          s.expiryRouteChangeCounter != null
+        ) "-expiryRouteChangeCounter=${toString s.expiryRouteChangeCounter}"
+        ++ optional (s.overThresholdTarget != null) "-overThresholdTarget=${toString s.overThresholdTarget}"
+        ++ optional (
+          s.underThresholdTarget != null
+        ) "-underThresholdTarget=${toString s.underThresholdTarget}"
+        ++ optional (
+          s.importLimitThousands != null
+        ) "-importLimitThousands=${toString s.importLimitThousands}"
+        ++ optional (s.maxPathHistory != null) "-maxPathHistory=${toString s.maxPathHistory}"
+        ++ optional (s.routerID != null) "-routerID=${s.routerID}"
         ++ optional s.debug "-debug"
         ++ optional s.disableAddPath "-disableAddPath"
         # ── HTTP API
-        ++ optional (s.httpAPIListenAddress != null)
-        "-httpAPIListenAddress=${s.httpAPIListenAddress}"
-        ++ optional (s.httpAPIKey != null)
-        "-httpAPIKey=${s.httpAPIKey}"
+        ++ optional (s.httpAPIListenAddress != null) "-httpAPIListenAddress=${s.httpAPIListenAddress}"
+        ++ optional (s.httpAPIKey != null) "-httpAPIKey=${s.httpAPIKey}"
         ++ optional s.httpAPILimit "-httpAPILimit"
         # ── HTTP dashboard / Gage
         ++ optional s.httpGageDisableDynamic "-httpGageDisableDynamic"
-        ++ optional (s.httpGageMaxValue != null)
-        "-httpGageMaxValue=${toString s.httpGageMaxValue}"
-        ++ optional (s.httpMaxUserDefined != null)
-        "-httpMaxUserDefined=${toString s.httpMaxUserDefined}"
+        ++ optional (s.httpGageMaxValue != null) "-httpGageMaxValue=${toString s.httpGageMaxValue}"
+        ++ optional (s.httpMaxUserDefined != null) "-httpMaxUserDefined=${toString s.httpMaxUserDefined}"
         # ── Webhooks (repeatable)
         ++ map (u: "-webhookUrlStart=${u}") s.webhookUrlStart
         ++ map (u: "-webhookUrlEnd=${u}") s.webhookUrlEnd
-        ++ optional (s.webhookTimeout != null)
-        "-webhookTimeout=${s.webhookTimeout}"
-        ++ optional (s.webhookInstanceName != null)
-        "-webhookInstanceName=${s.webhookInstanceName}"
+        ++ optional (s.webhookTimeout != null) "-webhookTimeout=${s.webhookTimeout}"
+        ++ optional (s.webhookInstanceName != null) "-webhookInstanceName=${s.webhookInstanceName}"
         # ── escape hatch
         ++ cfg.extraFlags;
-    in {
+    in
+    {
       assertions = [
         {
           assertion = cfg.birdConfig == "" || config.services.dn42.enable or false;
@@ -232,19 +225,18 @@ in {
 
       nixpkgs.overlays = [
         (_final: prev: {
-          flapalerted = prev.callPackage ../../../pkgs/flapalerted/default.nix {};
+          flapalerted = prev.callPackage ../../../pkgs/flapalerted/default.nix { };
         })
       ];
 
       systemd.services.flapalerted = {
         description = "flapalerted BGP flap detection service";
-        wantedBy = ["multi-user.target"];
-        after = ["network.target"];
+        wantedBy = [ "multi-user.target" ];
+        after = [ "network.target" ];
 
         serviceConfig = {
           Type = "simple";
-          environmentFile =
-            mkIf (cfg.environmentFile != null) cfg.environmentFile;
+          environmentFile = mkIf (cfg.environmentFile != null) cfg.environmentFile;
           ExecStart = "${pkgs.flapalerted}/bin/flapalerted ${concatStringsSep " " args}";
 
           User = cfg.user;
@@ -273,7 +265,7 @@ in {
       };
 
       users.groups = mkIf (cfg.group == "flapalerted") {
-        flapalerted = {};
+        flapalerted = { };
       };
     }
   );

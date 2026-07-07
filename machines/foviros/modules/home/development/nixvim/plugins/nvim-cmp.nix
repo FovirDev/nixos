@@ -1,66 +1,66 @@
-{...}: {
+{ ... }: {
   plugins.cmp = {
     enable = true;
 
     autoEnableSources = true;
     filetype = {
       c.sources = [
-        {name = "nvim_lsp";}
-        {name = "path";}
-        {name = "luasnip";}
+        { name = "nvim_lsp"; }
+        { name = "path"; }
+        { name = "luasnip"; }
       ];
       cpp.sources = [
-        {name = "nvim_lsp";}
-        {name = "path";}
-        {name = "luasnip";}
+        { name = "nvim_lsp"; }
+        { name = "path"; }
+        { name = "luasnip"; }
       ];
       java.sources = [
-        {name = "nvim_lsp";}
-        {name = "path";}
-        {name = "luasnip";}
+        { name = "nvim_lsp"; }
+        { name = "path"; }
+        { name = "luasnip"; }
       ];
       rust.sources = [
-        {name = "nvim_lsp";}
-        {name = "path";}
-        {name = "luasnip";}
+        { name = "nvim_lsp"; }
+        { name = "path"; }
+        { name = "luasnip"; }
       ];
       go.sources = [
-        {name = "nvim_lsp";}
-        {name = "path";}
-        {name = "luasnip";}
+        { name = "nvim_lsp"; }
+        { name = "path"; }
+        { name = "luasnip"; }
       ];
       scss.sources = [
-        {name = "nvim_lsp";}
-        {name = "path";}
-        {name = "luasnip";}
+        { name = "nvim_lsp"; }
+        { name = "path"; }
+        { name = "luasnip"; }
       ];
       html.sources = [
-        {name = "nvim_lsp";}
-        {name = "path";}
-        {name = "emmet";}
-        {name = "luasnip";}
-        {name = "buffer";}
+        { name = "nvim_lsp"; }
+        { name = "path"; }
+        { name = "emmet"; }
+        { name = "luasnip"; }
+        { name = "buffer"; }
       ];
       gitcommit.sources = [
-        {name = "conventionalcommits";}
-        {name = "path";}
-        {name = "buffer";}
+        { name = "conventionalcommits"; }
+        { name = "path"; }
+        { name = "buffer"; }
       ];
       markdown.sources = [
-        {name = "nvim_lsp";}
-        {name = "path";}
-        {name = "buffer";}
-        {name = "vimtex";}
+        { name = "nvim_lsp"; }
+        { name = "path"; }
+        { name = "buffer"; }
+        { name = "vimtex"; }
         {
           name = "latex_symbols";
           option.strategy = 2;
         }
       ];
       tex.sources = [
-        {name = "nvim_lsp";}
-        {name = "vimtex";}
-        {name = "path";}
-        {name = "buffer";}
+        { name = "nvim_lsp"; }
+        { name = "vimtex"; }
+        { name = "path"; }
+        { name = "buffer"; }
         {
           name = "latex_symbols";
           option.strategy = 2;
@@ -69,12 +69,12 @@
     };
 
     settings = {
-      completion.autocomplete = ["require('cmp.types').cmp.TriggerEvent.TextChanged"];
+      completion.autocomplete = [ "require('cmp.types').cmp.TriggerEvent.TextChanged" ];
 
       sources = [
-        {name = "nvim_lsp";}
-        {name = "path";}
-        {name = "buffer";}
+        { name = "nvim_lsp"; }
+        { name = "path"; }
+        { name = "buffer"; }
       ];
 
       snippet.expand = ''

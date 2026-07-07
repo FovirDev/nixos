@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.opencode.enable = true;
 
   keymaps = [
@@ -23,7 +23,7 @@
     {
       action = ''<cmd>lua require("opencode").toggle()<CR>'';
       key = "<leader>oct";
-      mode = ["n"];
+      mode = [ "n" ];
       options.desc = "[O]pen[C]ode [T]oggle";
     }
   ];

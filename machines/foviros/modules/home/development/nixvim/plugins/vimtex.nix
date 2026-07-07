@@ -1,5 +1,5 @@
-{pkgs, ...}: {
-  extraPackages = [pkgs.nodejs];
+{ pkgs, ... }: {
+  extraPackages = [ pkgs.nodejs ];
 
   plugins.vimtex = {
     enable = true;

@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.comment = {
     enable = true;
 
@@ -10,7 +10,10 @@
 
   keymaps = [
     {
-      mode = ["n" "i"];
+      mode = [
+        "n"
+        "i"
+      ];
       key = "<C-/>";
       action = ''<cmd>lua vim.api.nvim_feedkeys("gcc", "x", true)<CR>'';
       options.desc = "Toggle Line Comment";

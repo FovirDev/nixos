@@ -1,4 +1,4 @@
-{lib, ...}: {
+{ lib, ... }: {
   networking = {
     useDHCP = lib.mkForce false;
     interfaces.ens3 = import ../values/interfaces.nix;

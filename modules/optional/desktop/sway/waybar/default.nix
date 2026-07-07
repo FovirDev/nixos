@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   programs = {
     waybar.enable = true;
     wlogout = {
@@ -44,20 +45,22 @@
   };
 
   home = {
-    file = let
-      waybarConfigHome = "${config.xdg.configHome}/waybar";
-    in {
-      "${waybarConfigHome}/config.jsonc".source = ./config.jsonc;
-      "${waybarConfigHome}/modules.json".source = ./modules.json;
-      "${waybarConfigHome}/style.css".source = ./style.css;
-      ".local/bin/restart-waybar" = {
-        executable = true;
-        text = ''
-          #!/usr/bin/env bash
-          pkill waybar; waybar &
-        '';
+    file =
+      let
+        waybarConfigHome = "${config.xdg.configHome}/waybar";
+      in
+      {
+        "${waybarConfigHome}/config.jsonc".source = ./config.jsonc;
+        "${waybarConfigHome}/modules.json".source = ./modules.json;
+        "${waybarConfigHome}/style.css".source = ./style.css;
+        ".local/bin/restart-waybar" = {
+          executable = true;
+          text = ''
+            #!/usr/bin/env bash
+            pkill waybar; waybar &
+          '';
+        };
       };
-    };
     packages = with pkgs; [
       libnotify
       networkmanagerapplet

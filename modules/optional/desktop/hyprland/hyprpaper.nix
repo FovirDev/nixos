@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   services.hyprpaper = {
     enable = true;
 
@@ -20,7 +21,7 @@
   };
 
   home = {
-    packages = [pkgs.hyprpaper];
+    packages = [ pkgs.hyprpaper ];
     file."Pictures/Wallpaper" = {
       force = true;
       recursive = true;
@@ -33,5 +34,5 @@
     };
   };
 
-  wayland.windowManager.hyprland.settings.exec-once = ["hyprpaper"];
+  wayland.windowManager.hyprland.settings.exec-once = [ "hyprpaper" ];
 }

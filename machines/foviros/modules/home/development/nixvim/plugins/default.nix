@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   imports = [
     ./abolish.nix
     ./bufferline.nix

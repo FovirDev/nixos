@@ -1,5 +1,6 @@
-{lib, ...}:
-with lib; {
+{ lib, ... }:
+with lib;
+{
   environment.etc."resolv.conf" = mkForce {
     mode = "0644";
     text = ''

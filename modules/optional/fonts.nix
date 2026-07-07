@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs; [
@@ -9,10 +9,19 @@
     ];
 
     fontconfig.defaultFonts = {
-      emoji = ["Noto Color Emoji"];
-      monospace = ["JetBrainsMono Nerd Font Mono" "LXGW WenKai Mono"];
-      sansSerif = ["Noto Sans" "LXGW WenKai"];
-      serif = ["Noto Serif" "LXGW WenKai"];
+      emoji = [ "Noto Color Emoji" ];
+      monospace = [
+        "JetBrainsMono Nerd Font Mono"
+        "LXGW WenKai Mono"
+      ];
+      sansSerif = [
+        "Noto Sans"
+        "LXGW WenKai"
+      ];
+      serif = [
+        "Noto Serif"
+        "LXGW WenKai"
+      ];
     };
   };
 }

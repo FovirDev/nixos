@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   virtualisation.oci-containers.containers."valkey" = {
     autoStart = true;
     cmd = [
@@ -8,7 +8,7 @@
       "1"
     ];
     image = "valkey/valkey:latest";
-    ports = ["127.0.0.1:6379:6379"];
-    volumes = ["valkey:/data"];
+    ports = [ "127.0.0.1:6379:6379" ];
+    volumes = [ "valkey:/data" ];
   };
 }

@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     qemu
     quickemu
@@ -9,5 +9,5 @@
     spice-webdavd.enable = true;
   };
   virtualisation.libvirtd.enable = true;
-  networking.firewall.trustedInterfaces = ["virbr0"];
+  networking.firewall.trustedInterfaces = [ "virbr0" ];
 }

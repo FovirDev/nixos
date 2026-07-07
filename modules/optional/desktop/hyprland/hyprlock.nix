@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   programs.hyprlock.enable = true;
-  wayland.windowManager.hyprland.settings.bind = ["$mod,P,exec,hyprlock"];
+  wayland.windowManager.hyprland.settings.bind = [ "$mod,P,exec,hyprlock" ];
 }

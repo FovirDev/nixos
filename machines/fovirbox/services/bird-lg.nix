@@ -1,12 +1,12 @@
-{...}: {
+{ ... }: {
   services.bird-lg = {
     frontend = {
       enable = true;
       domain = "";
-      extraArgs = ["--trust-proxy-headers"];
+      extraArgs = [ "--trust-proxy-headers" ];
       listenAddresses = "127.0.0.1:15000";
       netSpecificMode = "dn42";
-      protocolFilter = ["bgp"];
+      protocolFilter = [ "bgp" ];
       proxyPort = 18000;
       servers = import ../values/bird-lg-servers.nix;
     };

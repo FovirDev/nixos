@@ -1,3 +1,3 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.oculante];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.oculante ];
 }

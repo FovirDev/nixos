@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.dashboard = {
     enable = true;
 
@@ -63,7 +63,7 @@
           '';
           limit = 9;
         };
-        footer = [" Coding or Dying "];
+        footer = [ " Coding or Dying " ];
       };
     };
   };

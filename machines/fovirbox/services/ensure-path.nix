@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   imports = [
     (import ../../../lib/ensure-path.nix {
       inherit pkgs;

@@ -1,3 +1,3 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.mumble];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.mumble ];
 }

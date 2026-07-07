@@ -1,8 +1,8 @@
-{...}: {
+{ ... }: {
   programs.librewolf = {
     enable = true;
 
-    languagePacks = ["en-US"];
+    languagePacks = [ "en-US" ];
     policies = {
       DisableAccounts = true;
       DisableAppUpdate = true;
@@ -25,25 +25,28 @@
 
       # Get ID with:
       # nix run github:tupakkatapa/mozid -- <URL>
-      ExtensionSettings = let
-        mkExtensions = {
-          ids,
-          privateIds ? [],
-          urlMap ? {},
-        }: let
-          allIds = ids ++ privateIds;
-          defaultUrl = id: "https://addons.mozilla.org/firefox/downloads/latest/${id}/latest.xpi";
-          mkEntry = id: {
-            name = id;
-            value = {
-              install_url = urlMap.${id} or (defaultUrl id);
-              installation_mode = "force_installed";
-              private_browsing = builtins.elem id privateIds;
-            };
-          };
+      ExtensionSettings =
+        let
+          mkExtensions =
+            {
+              ids,
+              privateIds ? [ ],
+              urlMap ? { },
+            }:
+            let
+              allIds = ids ++ privateIds;
+              defaultUrl = id: "https://addons.mozilla.org/firefox/downloads/latest/${id}/latest.xpi";
+              mkEntry = id: {
+                name = id;
+                value = {
+                  install_url = urlMap.${id} or (defaultUrl id);
+                  installation_mode = "force_installed";
+                  private_browsing = builtins.elem id privateIds;
+                };
+              };
+            in
+            builtins.listToAttrs (map mkEntry allIds);
         in
-          builtins.listToAttrs (map mkEntry allIds);
-      in
         {
           "*" = {
             installation_mode = "blocked";

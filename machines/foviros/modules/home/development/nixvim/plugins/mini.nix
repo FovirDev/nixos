@@ -1,3 +1,3 @@
-{...}: {
+{ ... }: {
   plugins.mini.enable = true;
 }

@@ -1,4 +1,4 @@
-{username}: {pkgs, ...}: {
+{ username }: { pkgs, ... }: {
   home-manager.users.${username} = {
     home.packages = with pkgs; [
       libsForQt5.qtstyleplugin-kvantum
@@ -15,8 +15,10 @@
       "qt5ct/catppuccin-mocha-lavender.conf".source = ./catppuccin-mocha-lavender.conf;
       "qt6ct/catppuccin-mocha-lavender.conf".source = ./catppuccin-mocha-lavender.conf;
       "Kvantum/kvantum.kvconfig".source = ./kvantum.kvconfig;
-      "Kvantum/catppuccin-mocha-lavender/catppuccin-mocha-lavender.kvconfig".source = ./catppuccin-mocha-lavender/catppuccin-mocha-lavender.kvconfig;
-      "Kvantum/catppuccin-mocha-lavender/catppuccin-mocha-lavender.svg".source = ./catppuccin-mocha-lavender/catppuccin-mocha-lavender.svg;
+      "Kvantum/catppuccin-mocha-lavender/catppuccin-mocha-lavender.kvconfig".source =
+        ./catppuccin-mocha-lavender/catppuccin-mocha-lavender.kvconfig;
+      "Kvantum/catppuccin-mocha-lavender/catppuccin-mocha-lavender.svg".source =
+        ./catppuccin-mocha-lavender/catppuccin-mocha-lavender.svg;
     };
   };
 }

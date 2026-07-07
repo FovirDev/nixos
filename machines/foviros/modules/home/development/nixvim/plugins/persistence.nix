@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.persistence = {
     enable = true;
     autoLoad = true;

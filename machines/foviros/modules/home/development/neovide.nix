@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   programs.neovide = {
     enable = true;
 
@@ -7,10 +7,10 @@
       maximized = true;
       srgb = true;
       font = {
-        normal = ["JetBrainsMono Nerd Font Mono"];
+        normal = [ "JetBrainsMono Nerd Font Mono" ];
         size = 14.0;
       };
     };
   };
-  wayland.windowManager.hyprland.settings.bind = ["$mod,N,exec,neovide"];
+  wayland.windowManager.hyprland.settings.bind = [ "$mod,N,exec,neovide" ];
 }

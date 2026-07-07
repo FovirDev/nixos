@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   userCommands = {
     W = {
       command = "noautocmd w";

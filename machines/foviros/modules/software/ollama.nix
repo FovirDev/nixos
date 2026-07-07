@@ -2,8 +2,10 @@
   pkgs,
   lib,
   ...
-}: {
-  nixpkgs.config.allowUnfreePredicate = pkg:
+}:
+{
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
     builtins.elem (lib.getName pkg) [
       "cuda_cccl"
       "cuda_cudart"

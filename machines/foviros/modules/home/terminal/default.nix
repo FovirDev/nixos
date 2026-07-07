@@ -1,6 +1,8 @@
-{pkgs, ...}: let
+{ pkgs, ... }:
+let
   batTheme = "Catppuccin Mocha";
-in {
+in
+{
   imports = [
     ./bash.nix
     ./fastfetch

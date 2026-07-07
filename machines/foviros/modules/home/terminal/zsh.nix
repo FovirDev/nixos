@@ -1,8 +1,10 @@
-{pkgs, ...}: let
+{ pkgs, ... }:
+let
   iconPathPrefix = "${pkgs.beauty-line-icon-theme}/share/icons/BeautyLine/apps/scalable";
   successIcon = "${iconPathPrefix}/gnome-info.svg";
   failedIcon = "${iconPathPrefix}/error.svg";
-in {
+in
+{
   programs.zsh = {
     enable = true;
 

@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.markdown-preview.enable = true;
 
   keymaps = [

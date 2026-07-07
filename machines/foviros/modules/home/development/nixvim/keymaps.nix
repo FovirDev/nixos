@@ -1,9 +1,12 @@
-{...}: {
+{ ... }: {
   keymaps = [
     {
       action = "<C-w>";
       key = "<C-BS>";
-      mode = ["i" "t"];
+      mode = [
+        "i"
+        "t"
+      ];
       options.desc = "Delete a Word";
     }
     {

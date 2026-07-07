@@ -1,8 +1,8 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   services.xserver = {
     enable = true;
 
-    excludePackages = [pkgs.xterm];
-    videoDrivers = ["amdgpu"];
+    excludePackages = [ pkgs.xterm ];
+    videoDrivers = [ "amdgpu" ];
   };
 }

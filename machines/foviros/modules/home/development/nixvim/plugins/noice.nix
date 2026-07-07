@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins = {
     noice = {
       enable = true;
@@ -10,9 +10,14 @@
           {
             filter = {
               event = "msg_show";
-              any = [{find = "Hop";} {find = "hop";}];
+              any = [
+                { find = "Hop"; }
+                { find = "hop"; }
+              ];
             };
-            opts = {skip = true;};
+            opts = {
+              skip = true;
+            };
           }
         ];
         views.cmdline_popup.size = {

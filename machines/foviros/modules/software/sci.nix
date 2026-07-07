@@ -1,11 +1,13 @@
-{username}: let
+{ username }:
+let
   sciName = import ../../values/sci-name.nix;
-in {
+in
+{
   programs = import ../../values/sci.nix;
 
   home-manager.users.${username}.wayland.windowManager = {
     hyprland.settings = {
-      exec-once = [sciName];
+      exec-once = [ sciName ];
       windowrule = [
         "workspace special, match:class .*${sciName}.*"
       ];
@@ -14,7 +16,9 @@ in {
       window.commands = [
         {
           command = "move container to workspace -1";
-          criteria = {class = sciName;};
+          criteria = {
+            class = sciName;
+          };
         }
       ];
       startup = [

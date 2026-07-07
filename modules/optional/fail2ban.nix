@@ -1,4 +1,4 @@
-{ignoreIP}: {pkgs, ...}: {
+{ ignoreIP }: { pkgs, ... }: {
   services = {
     openssh.settings.LogLevel = "VERBOSE";
 
@@ -20,12 +20,11 @@
       });
 
       maxretry = 5;
-      ignoreIP =
-        [
-          "127.0.0.1"
-          "::1"
-        ]
-        ++ ignoreIP;
+      ignoreIP = [
+        "127.0.0.1"
+        "::1"
+      ]
+      ++ ignoreIP;
       bantime = "300d"; # Ban IPs for one day on the first ban
       banaction = "nftables-multiport";
       bantime-increment = {

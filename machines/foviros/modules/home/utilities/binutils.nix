@@ -1,3 +1,3 @@
-{pkgs, ...}: {
-  home.packages = with pkgs; [binutils];
+{ pkgs, ... }: {
+  home.packages = with pkgs; [ binutils ];
 }

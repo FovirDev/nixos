@@ -1,3 +1,3 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.usbutils];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.usbutils ];
 }

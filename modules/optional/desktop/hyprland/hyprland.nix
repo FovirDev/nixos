@@ -1,16 +1,14 @@
-{monitor-config}: {...}: {
+{ monitor-config }: { ... }: {
   wayland.windowManager.hyprland = {
     enable = true;
 
     xwayland.enable = true;
     systemd = {
       enable = true;
-      variables = ["--all"];
+      variables = [ "--all" ];
     };
     settings = {
-      monitor =
-        [",preferred,auto,1"]
-        ++ monitor-config;
+      monitor = [ ",preferred,auto,1" ] ++ monitor-config;
       misc.vrr = 1;
       xwayland.force_zero_scaling = true;
       "$mod" = "SUPER";
@@ -81,7 +79,7 @@
         no_donation_nag = true;
         no_update_news = true;
       };
-      bezier = ["macReal, 0.26, 0.06, 0.22, 1.00"];
+      bezier = [ "macReal, 0.26, 0.06, 0.22, 1.00" ];
       animation = [
         "border,1,8,default"
         "borderangle,0"
@@ -95,7 +93,7 @@
         "windowsOut,1,3.0,macReal,popin"
         "workspaces,1,5.2,macReal,slide"
       ];
-      workspace = ["6,monitor:HDMI-A-1,default:true"];
+      workspace = [ "6,monitor:HDMI-A-1,default:true" ];
       render.direct_scanout = 1;
     };
   };

@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   home.file = {
     ".local/bin/ubuntu" = {
       executable = true;

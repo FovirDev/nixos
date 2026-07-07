@@ -1,4 +1,4 @@
-{pkgs, ...}: {
-  environment.systemPackages = [pkgs.restic];
-  imports = [../values/restic-conf.nix];
+{ pkgs, ... }: {
+  environment.systemPackages = [ pkgs.restic ];
+  imports = [ ../values/restic-conf.nix ];
 }

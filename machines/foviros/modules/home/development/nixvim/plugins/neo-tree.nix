@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.neo-tree = {
     enable = true;
 
@@ -12,7 +12,7 @@
       filesystem = {
         filtered_items = {
           hide_dotfiles = false;
-          hide_by_name = [".git"];
+          hide_by_name = [ ".git" ];
         };
         follow_current_file = {
           enabled = true;

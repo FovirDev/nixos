@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   imports = [
     # ./move_analyzer.nix
     ./asm_lsp.nix

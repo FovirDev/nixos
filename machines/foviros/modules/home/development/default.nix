@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   imports = [
     # ./llama-cpp.nix
     # ./sui.nix

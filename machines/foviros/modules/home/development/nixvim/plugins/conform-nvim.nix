@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.conform-nvim = {
     enable = true;
 
@@ -10,21 +10,30 @@
       '';
 
       formatters_by_ft = {
-        "_" = ["prettier"];
-        "c" = ["clang_format"];
-        "cpp" = ["clang_format"];
-        "go" = ["goimports" "gofumpt"];
-        "java" = ["google-java-format"];
-        "nix" = ["nixfmt"];
-        "python" = ["black"];
-        "rust" = ["rustfmt"];
-        "sql" = ["pg_format"];
-        "tex" = ["latexindent"];
-        "toml" = ["taplo"];
+        "_" = [ "prettier" ];
+        "c" = [ "clang_format" ];
+        "cpp" = [ "clang_format" ];
+        "go" = [
+          "goimports"
+          "gofumpt"
+        ];
+        "java" = [ "google-java-format" ];
+        "nix" = [ "nixfmt" ];
+        "python" = [ "black" ];
+        "rust" = [ "rustfmt" ];
+        "sql" = [ "pg_format" ];
+        "tex" = [ "latexindent" ];
+        "toml" = [ "taplo" ];
       };
       formatters = {
-        gofumpt.append_args = ["-extra"];
-        pg_format.append_args = ["-u" "0" "-U" "0" "--no-extra-line"];
+        gofumpt.append_args = [ "-extra" ];
+        pg_format.append_args = [
+          "-u"
+          "0"
+          "-U"
+          "0"
+          "--no-extra-line"
+        ];
       };
     };
   };

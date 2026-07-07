@@ -2,8 +2,9 @@
   inputs,
   pkgs,
   ...
-}: {
-  imports = [inputs.hyprshell.homeModules.hyprshell];
+}:
+{
+  imports = [ inputs.hyprshell.homeModules.hyprshell ];
 
   programs.hyprshell = {
     enable = true;
@@ -32,8 +33,8 @@
   };
 
   wayland.windowManager.hyprland.settings = {
-    bind = ["$mod SHIFT, R, exec, restart-hyprshell"];
-    layerrule = ["match:namespace .*hyprshell.*, no_anim on"];
+    bind = [ "$mod SHIFT, R, exec, restart-hyprshell" ];
+    layerrule = [ "match:namespace .*hyprshell.*, no_anim on" ];
   };
 
   home = {
@@ -45,6 +46,8 @@
         pkill hyprshell ; hyprshell run -q &
       '';
     };
-    sessionVariables = {HYPRSHELL_NO_USE_PLUGIN = "1";};
+    sessionVariables = {
+      HYPRSHELL_NO_USE_PLUGIN = "1";
+    };
   };
 }

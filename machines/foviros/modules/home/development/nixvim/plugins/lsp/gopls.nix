@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.lsp.servers.gopls = {
     enable = true;
     filetypes = [
@@ -16,7 +16,11 @@
           parameterNames = true;
           rangeVariableTypes = true;
         };
-        templateExtensions = [".html" ".tmpl" ".gohtml"];
+        templateExtensions = [
+          ".html"
+          ".tmpl"
+          ".gohtml"
+        ];
       };
     };
   };

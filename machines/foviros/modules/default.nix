@@ -1,6 +1,6 @@
-{username}: {
+{ username }: {
   imports = [
-    (import ./software {inherit username;})
+    (import ./software { inherit username; })
     ./system
   ];
 }

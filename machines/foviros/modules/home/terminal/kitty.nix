@@ -1,6 +1,8 @@
-{...}: let
+{ ... }:
+let
   kitty = "kitty";
-in {
+in
+{
   programs.${kitty} = {
     enable = true;
 

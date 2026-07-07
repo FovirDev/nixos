@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   nix = {
     channel.enable = false;
     gc = {
@@ -8,7 +8,7 @@
     };
     optimise = {
       automatic = true;
-      dates = ["weekly"];
+      dates = [ "weekly" ];
     };
     settings = {
       substituters = [

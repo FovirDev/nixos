@@ -1,3 +1,3 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.nixpkgs-track];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.nixpkgs-track ];
 }

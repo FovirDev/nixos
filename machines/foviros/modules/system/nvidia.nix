@@ -2,10 +2,12 @@
   config,
   lib,
   ...
-}: {
-  services.xserver.videoDrivers = ["nvidia"];
+}:
+{
+  services.xserver.videoDrivers = [ "nvidia" ];
 
-  nixpkgs.config.allowUnfreePredicate = pkg:
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
     builtins.elem (lib.getName pkg) [
       "nvidia-settings"
       "nvidia-x11"

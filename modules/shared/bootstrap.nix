@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   boot = {
     extraModprobeConfig = "blacklist mei mei_hdcp mei_me mei_pxp iTCO_wdt pstore sp5100_tco";
     initrd = {
@@ -45,7 +45,7 @@
       "net.ipv6.conf.eth0.accept_ra" = false;
       "net.ipv6.conf.eth0.autoconf" = false;
     };
-    kernelModules = ["tcp_bbr"];
+    kernelModules = [ "tcp_bbr" ];
     kernelParams = [
       "audit=0"
       "console=tty1"

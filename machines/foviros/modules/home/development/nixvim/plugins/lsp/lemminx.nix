@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.lsp.servers.lemminx = {
     enable = true;
 

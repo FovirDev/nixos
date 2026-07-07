@@ -1,3 +1,3 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.inkscape];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.inkscape ];
 }

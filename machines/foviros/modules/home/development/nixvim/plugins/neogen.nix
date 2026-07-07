@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.neogen = {
     enable = true;
 

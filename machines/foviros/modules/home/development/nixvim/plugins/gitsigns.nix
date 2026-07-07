@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   extraConfigLua = ''
     vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", {
       fg = "#a6adc8",

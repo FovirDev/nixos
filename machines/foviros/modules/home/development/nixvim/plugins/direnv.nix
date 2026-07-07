@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.direnv = {
     enable = true;
 

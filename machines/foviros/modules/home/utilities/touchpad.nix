@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   home.file = {
     ".local/bin/disable_touchpad" = {
       text = ''
@@ -23,6 +23,6 @@
       "ALT,T,exec,disable_touchpad"
       "ALT_SHIFT,T,exec,enable_touchpad"
     ];
-    exec-once = ["disable_touchpad"];
+    exec-once = [ "disable_touchpad" ];
   };
 }

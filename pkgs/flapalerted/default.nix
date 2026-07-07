@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation {
     description = "BGP Update based flap detection";
     homepage = "https://github.com/Kioubit/FlapAlerted";
     license = licenses.free;
-    platforms = ["x86_64-linux"];
-    maintainers = [atp];
+    platforms = [ "x86_64-linux" ];
+    maintainers = [ atp ];
   };
 }

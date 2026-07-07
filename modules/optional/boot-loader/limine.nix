@@ -1,4 +1,4 @@
-{lib, ...}: {
+{ lib, ... }: {
   boot.loader.limine = {
     biosSupport = true;
     efiInstallAsRemovable = true;

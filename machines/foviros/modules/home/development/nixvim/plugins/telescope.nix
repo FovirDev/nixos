@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   plugins.telescope = {
     enable = true;
 
@@ -8,7 +8,7 @@
     };
     settings = {
       defaults = {
-        path_display = ["truncate"];
+        path_display = [ "truncate" ];
         vimgrep_arguments = [
           "rg"
           "--color=never"

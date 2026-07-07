@@ -1,3 +1,3 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.podman-compose];
+{ pkgs, ... }: {
+  home.packages = [ pkgs.podman-compose ];
 }

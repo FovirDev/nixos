@@ -1,9 +1,9 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   programs.firefox = {
     enable = true;
 
     package = pkgs.firefox-devedition;
-    languagePacks = ["en-US"];
+    languagePacks = [ "en-US" ];
     policies = {
       DisableAccounts = true;
       DisableAppUpdate = true;

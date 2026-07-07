@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   security = {
     sudo.enable = false;
 
