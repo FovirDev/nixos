@@ -5,6 +5,7 @@
     # ./social.nix
     # ./zeroclaw.nix
     ../values/sci.nix
+    ./bentopdf.nix
     ./bird-lg.nix
     ./caddy.nix
     ./dn42.nix
