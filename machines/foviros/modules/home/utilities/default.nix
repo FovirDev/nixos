@@ -4,6 +4,7 @@
     ./archiver.nix
     ./binutils.nix
     ./element-desktop.nix
+    ./freetube.nix
     ./gotify-desktop.nix
     ./gpg.nix
     ./keepassxc.nix
