@@ -1,4 +1,15 @@
-{ ... }: {
+{ pkgs, ... }: {
+  extraPackages = with pkgs; [
+    black
+    gofumpt
+    google-java-format
+    nixfmt
+    pgformatter
+    prettier
+    prettier-plugin-go-template
+    taplo
+  ];
+
   plugins.conform-nvim = {
     enable = true;
 

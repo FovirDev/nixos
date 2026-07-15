@@ -1,15 +1,4 @@
-{ pkgs, ... }: {
-  home.packages = with pkgs; [
-    black
-    google-java-format
-    nixfmt
-    pgformatter
-    prettier
-    prettier-plugin-go-template
-    taplo
-    xmlstarlet
-  ];
-
+{ ... }: {
   home.file = {
     ".prettierrc".text = ''
       {
