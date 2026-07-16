@@ -24,6 +24,7 @@
         "_" = [ "prettier" ];
         "c" = [ "clang_format" ];
         "cpp" = [ "clang_format" ];
+        "gleam" = [ "gleam format" ];
         "go" = [
           "goimports"
           "gofumpt"

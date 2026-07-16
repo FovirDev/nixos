@@ -5,6 +5,7 @@
     ./clangd.nix
     ./cmake.nix
     ./cssls.nix
+    ./gleam.nix
     ./golangci_lint_ls.nix
     ./gopls.nix
     ./html.nix
