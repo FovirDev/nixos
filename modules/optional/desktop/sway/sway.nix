@@ -154,7 +154,7 @@
           "${mod}+8" = "workspace number 8";
           "${mod}+9" = "workspace number 9";
           "${mod}+Tab" = "exec toggle-special";
-          "${mod}+b" = "exec kitty --app-id btop btop";
+          "${mod}+b" = "exec alacritty -e btop";
           "${mod}+bracketleft" = "exec move-prev";
           "${mod}+bracketright" = "exec move-next";
           "${mod}+comma" = "exec ws-prev";
@@ -174,7 +174,7 @@
           "${mod}+r" = "exec restart-waybar";
           "${mod}+s" = "exec screenshot-area";
           "${mod}+space" = "floating toggle";
-          "${mod}+y" = "exec kitty --app-id yazi yazi";
+          "${mod}+y" = "exec alacritty -e yazi";
           "--release Caps_Lock" = "exec swayosd-client --caps-lock";
           "Ctrl+Alt+Space" = "exec swayosd-client --playerctl play-pause";
           "Ctrl+Alt+n" = "exec playerctl next";
@@ -187,7 +187,7 @@
           "XF86MonBrightnessDown" = "exec swayosd-client --brightness -5";
           "XF86MonBrightnessUp" = "exec swayosd-client --brightness +5";
           "alt+tab" = "exec swayr switch-to-urgent-or-lru-window";
-          "f1" = "exec kitty";
+          "f1" = "exec alacritty";
         };
         floating.modifier = mod;
         startup =

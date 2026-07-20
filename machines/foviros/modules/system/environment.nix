@@ -4,7 +4,7 @@
   environment = {
     localBinInPath = true;
     variables = {
-      TERMINAL = "kitty";
+      TERMINAL = "alacritty";
       EDITOR = "nvim";
 
       _JAVA_AWT_WM_NONREPARENTING = 1;

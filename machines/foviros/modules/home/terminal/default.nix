@@ -4,6 +4,7 @@ let
 in
 {
   imports = [
+    ./alacritty.nix
     ./bash.nix
     ./fastfetch
     ./kitty.nix
