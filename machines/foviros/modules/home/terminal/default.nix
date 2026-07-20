@@ -4,10 +4,10 @@ let
 in
 {
   imports = [
+    # ./kitty.nix
     ./alacritty.nix
     ./bash.nix
     ./fastfetch
-    ./kitty.nix
     ./pure-prompt.nix
     ./scripts.nix
     ./zsh.nix
