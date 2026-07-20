@@ -25,6 +25,7 @@ in
       crv = "cargo run --verbose";
       ct = "cargo test";
       ctv = "cargo test --verbose";
+      f = "fg";
       gc = "git commit --verbose -s";
       gfo = "git fetch origin";
       gfu = "git fetch upstream";
