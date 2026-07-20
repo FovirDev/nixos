@@ -166,7 +166,6 @@
           "${mod}+k" = "focus up";
           "${mod}+l" = "focus right";
           "${mod}+m" = "exec swayosd-client --output-volume mute-toggle";
-          "${mod}+n" = "exec neovide";
           "${mod}+o" = "exec screenshot-ocr";
           "${mod}+p" = "exec swaylock";
           "${mod}+period" = "exec ws-next";
