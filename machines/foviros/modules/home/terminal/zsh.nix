@@ -47,6 +47,7 @@ in
       lt = "eza -aT --color=always --group-directories-first --icons=always"; # Tree listing.
       mv = "mv --verbose";
       n = "nvim";
+      oc = "opencode";
       open = "xdg-open"; # Open.
       rm = "rm -v";
       tmp = "cd $(mktemp -d)";
