@@ -2,7 +2,7 @@
   programs.opencode = {
     enable = true;
 
-    tui.theme = "catppuccin-macchiato";
+    tui.theme = "system";
     settings = {
       autoupdate = true;
       plugin = [
