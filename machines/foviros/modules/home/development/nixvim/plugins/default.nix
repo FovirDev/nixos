@@ -1,5 +1,6 @@
 { ... }: {
   imports = [
+    # ./toggleterm.nix
     ./abolish.nix
     ./bufferline.nix
     ./cmp-conventionalcommits.nix
@@ -33,7 +34,6 @@
     ./rainbow-delimiters.nix
     ./telescope.nix
     ./tmux-navigator.nix
-    ./toggleterm.nix
     ./treesitter-context.nix
     ./treesitter.nix
     ./ts-autotag.nix

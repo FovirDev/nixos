@@ -182,5 +182,11 @@
       key = "<M-Esc>";
       options.desc = "Terminal -> Normal";
     }
+    {
+      action = "<cmd>suspend<CR>";
+      mode = "n";
+      key = "<C-`>";
+      options.desc = "Suspend to Terminal";
+    }
   ];
 }
