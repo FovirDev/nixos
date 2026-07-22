@@ -4,6 +4,7 @@
     theme = "modus_vivendi";
     settings = {
       cursor = {
+        style.blinking = "Never";
         vi_mode_style = {
           shape = "Block";
           blinking = "Off";
