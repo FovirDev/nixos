@@ -18,6 +18,5 @@
     ./podman-compose.nix
     ./usbutils.nix
     ./wakatime.nix
-    ./weka.nix
   ];
 }
