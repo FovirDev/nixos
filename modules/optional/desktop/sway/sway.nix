@@ -210,10 +210,8 @@
             always = true;
           }) autostart;
         input."type:touchpad".events = "disabled";
+        seat."*".hide_cursor = "when-typing enable";
       };
-    extraConfig = ''
-      seat * hide_cursor when-typing enable
-    '';
     extraOptions = [ "--unsupported-gpu" ];
     extraSessionCommands = ''
       export WLR_DRM_DEVICES=/dev/dri/card1:/dev/dri/card0
