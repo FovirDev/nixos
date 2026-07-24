@@ -154,7 +154,7 @@
           "${mod}+8" = "workspace number 8";
           "${mod}+9" = "workspace number 9";
           "${mod}+Tab" = "exec toggle-special";
-          "${mod}+b" = "exec alacritty -e btop";
+          "${mod}+b" = "exec alacritty --class btop -e btop";
           "${mod}+bracketleft" = "exec move-prev";
           "${mod}+bracketright" = "exec move-next";
           "${mod}+comma" = "exec ws-prev";
@@ -173,7 +173,7 @@
           "${mod}+r" = "exec restart-waybar";
           "${mod}+s" = "exec screenshot-area";
           "${mod}+space" = "floating toggle";
-          "${mod}+y" = "exec alacritty -e yazi";
+          "${mod}+y" = "exec alacritty --class yazi -e yazi";
           "--release Caps_Lock" = "exec swayosd-client --caps-lock";
           "Ctrl+Alt+Space" = "exec swayosd-client --playerctl play-pause";
           "Ctrl+Alt+n" = "exec playerctl next";
