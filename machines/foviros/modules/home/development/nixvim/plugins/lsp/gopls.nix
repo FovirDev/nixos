@@ -1,6 +1,7 @@
 { ... }: {
   plugins.lsp.servers.gopls = {
     enable = true;
+    packageFallback = true;
     filetypes = [
       "go"
       "gotmpl"
