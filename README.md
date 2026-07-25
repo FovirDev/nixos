@@ -1,7 +1,7 @@
 # My NixOS Configuration
 
 - Source code: [Codeberg](https://codeberg.org/Fovir/nixos)
-- Mirror repository: [GitHub](https://github.com/Fovir-GitHub/nixos)
+- Mirror repository: [GitHub](https://github.com/FovirDev/nixos)
 
 ## Introduction
 
