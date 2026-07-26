@@ -1,14 +1,14 @@
 {
-	"data": "ENC[AES256_GCM,data:oLrIF1O378FgVwfYSFO8OIRg9AAfig4EnL2Gb1yXeKvi6KQIb/9srYSjBaxFVqx72Hg=,iv:b6w4URgMdLK3aZ1rMGJyHZYbRCb314wJv8S+ewIjOhI=,tag:TfzdEvvy0WVL1Og9WTSuzA==,type:str]",
+	"data": "ENC[AES256_GCM,data:V1myA1fDqlxmgl4QRtvw+dJjRnxMAHBHHqpt0fJjF4cvATsCd400Fu0ZzEGd+NP0Chs=,iv:ngbU/1+w7Sg40VpQ33soS/tQ2oOiZtaM5F4VAaKq/nY=,tag:bAhk2aQjFMWY3hleDOpukQ==,type:str]",
 	"sops": {
 		"age": [
 			{
-				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHa2R5THlhaUg1ZzFRbEVt\nM0RGRi81NTNYMVh2MUpzZmlFc0tjR2I3V0c4CjRZMkhyMkNNZ2ZHd0VsYjZGNm0v\nUGNXZVNJSXdIRHhhMHBreFRURjJqbTgKLS0tIE56akM1alA0eXEwTVYzeFhFb1JE\nMXVRVnk4eWhHcFJEQlNOdW41MkV0MmMKjdJXzphV0YpZW6ZGwy4aHnN3tY3xesYG\nrqabvaMns+BXo6mrVldMJDg2RwYkrUYAvMzjDfnq2JQFJXgSbUc/1g==\n-----END AGE ENCRYPTED FILE-----\n",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2SWlzazNIa2FDQk1JU252\nOG9Uc2FxREpVSHIrQ3JFbXVrb01UMzJPN0JnClBpMzRlQXlJa0padWhmMlFHZisz\nOEZXUDhZQXBXWnlmRW9uK1RuTXVBY3MKLS0tIFlIaTlReHNta3BncFBvaWVJM2Zq\nSkVESGM5L0V5UnVEWDh5NzhMMDAxOTgKyLPSZRh9Ym7EyZ3zbpgmI2TEQZ31MKx7\ntaScgAEaHvRdJUMPYOmhh7Vs7ZCi9r1VNx4zWUPitsvvHxpbcpRYOg==\n-----END AGE ENCRYPTED FILE-----\n",
 				"recipient": "age172xqa230e5vwzsdajc6ak235qvg448nf9g02xjp80w3vknsacd3qszzc87"
 			}
 		],
-		"lastmodified": "2026-07-08T06:32:34Z",
-		"mac": "ENC[AES256_GCM,data:8+fuZMkGITbUMCeEo5yLXSbWYC3p1EEoPF4AX5P++afHkmV3GOyhNBrQCJSNUa/nU3lqLuxRbHsZZhmxouMGYb07oookfL6h72gOfDi02OC3elCuo3ofJVuRSv42xiWx3ADZrnxLKYfPKrB/sfifBBeknoEA/YXD6wqAcGLq57Q=,iv:u+AKejiJxuD9zIPyHhAxhJnAFZlMQ0ckfYpWQLi+9Ok=,tag:9tXXex3LymQptLE1mrBhRw==,type:str]",
-		"version": "3.13.1"
+		"lastmodified": "2026-07-26T17:42:36Z",
+		"mac": "ENC[AES256_GCM,data:GweiNrILdvxCctSkAGdjSkitMm4xQ82lL9f3fmeBwvvpa0rjUONSOh/9oxJ+ySvWLg4EmnLAik4saK1oAAkSBLnFINYKiysHCFsuez+TmDzoEILI/htMoo0f9PV6NzFQFyxtpJpk1dek8BAaAu/VmHPVKHPq7IveKvzDhi7+eCs=,iv:Q8bDAZ9PzBWZjhpnWpiYNk97wY7GFlgedFxjdKOWZqU=,tag:xZ4WHkTLab78NyVNTnx87w==,type:str]",
+		"version": "3.13.2"
 	}
 }
