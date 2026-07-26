@@ -6,5 +6,17 @@
       pattern = [ "*" ];
       desc = "Highlight on yank.";
     }
+    {
+      command = "if mode() != 'c' && getcmdwintype() == '' | checktime | endif";
+      event = [
+        "BufEnter"
+        "CursorHold"
+        "CursorHoldI"
+        "FocusGained"
+        "VimResume"
+      ];
+      pattern = "*";
+      desc = "Automatically checktime";
+    }
   ];
 }

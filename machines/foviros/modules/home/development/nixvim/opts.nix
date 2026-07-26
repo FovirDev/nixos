@@ -20,6 +20,7 @@
   '';
 
   opts = {
+    autoread = true;
     # Configure tab behaviours.
     tabstop = 4;
     shiftwidth = 4;
