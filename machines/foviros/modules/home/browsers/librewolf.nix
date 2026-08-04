@@ -203,6 +203,7 @@
         "sidebar.verticalTabs" = true;
         "sidebar.verticalTabs.dragToPinPromo.dismissed" = true;
         "sidebar.visibility" = "expand-on-hover";
+        "widget.wayland.fractional-scale.enabled" = false;
       };
     };
   };
