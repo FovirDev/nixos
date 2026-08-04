@@ -57,7 +57,6 @@
             "addon@darkreader.org" # Dark Reader
             "firefox@tampermonkey.net" # Tampermonkey
             "keepassxc-browser@keepassxc.org" # KeepassXC
-            "simple-tab-groups@drive4ik" # Simple Tab Groups
             "{c2c003ee-bd69-42a2-b0e9-6f34222cb046}" # Auto Tab Discard
             "{d7742d87-e61d-4b78-b8a1-b469842139fa}" # Vimium
           ];
@@ -160,7 +159,6 @@
                 "addon_darkreader_org-browser-action",
                 "wappalyzer_crunchlabz_com-browser-action",
                 "_74145f27-f039-47ce-a470-a662b129930a_-browser-action",
-                "simple-tab-groups_drive4ik-browser-action",
                 "sidebar-button"
               ],
               "toolbar-menubar": ["menubar-items"],
@@ -176,7 +174,6 @@
               "_74145f27-f039-47ce-a470-a662b129930a_-browser-action",
               "_a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7_-browser-action",
               "_036a55b4-5e72-4d05-a06c-cba2dfcc134a_-browser-action",
-              "simple-tab-groups_drive4ik-browser-action",
               "_fb25c100-22ce-4d5a-be7e-75f3d6f0fc13_-browser-action",
               "keepassxc-browser_keepassxc_org-browser-action",
               "addon_darkreader_org-browser-action",
