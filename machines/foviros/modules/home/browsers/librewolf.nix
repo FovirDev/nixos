@@ -198,7 +198,7 @@
         "privacy.clearOnShutdown_v2.cache" = false;
         "privacy.clearOnShutdown_v2.cookiesAndStorage" = false;
         "sidebar.animation.expand-on-hover.delay-duration-ms" = 0;
-        "sidebar.animation.expand-on-hover.duration-ms" = 0;
+        "sidebar.animation.expand-on-hover.duration-ms" = 50;
         "sidebar.position_start" = false;
         "sidebar.verticalTabs" = true;
         "sidebar.verticalTabs.dragToPinPromo.dismissed" = true;
