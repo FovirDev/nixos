@@ -119,6 +119,7 @@
               ['"']=true, ["'"]=true,
               ["`"]=true, [";"]=true,
               ["*"]=true, ["$"]=true,
+              ["|"]=true,
              }
 
             if cmp.visible() then
