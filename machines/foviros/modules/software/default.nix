@@ -4,6 +4,7 @@
     ./chromium.nix
     ./direnv.nix
     ./ollama.nix
+    ./tailscale.nix
     ./wireshark.nix
   ];
 }
