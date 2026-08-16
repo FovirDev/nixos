@@ -51,10 +51,10 @@
             force = true;
             recursive = true;
             source = pkgs.fetchFromGitHub {
-              hash = "sha256-lIOTc2zdZH9GXKHuH2lv40I8+KaZxo8nZGbZPyBfXbs=";
+              hash = "sha256-UZtxZ1GwURCNNJoS/j0mZFgX7UprdlgxpxGvsAqqTKY=";
               owner = "iDvel";
               repo = "rime-ice";
-              rev = "3a543652a42c21904c62bd881d65e987600f0722";
+              rev = "c398c0d4526b012cb3b306f792089abed13e0413";
             };
           };
           "fcitx5/themes".source = "${ctpThemes}/src";
