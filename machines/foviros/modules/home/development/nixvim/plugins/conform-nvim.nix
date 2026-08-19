@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  extraPackages = with pkgs; [
+  extraPackages = with pkgs.unstable; [
     black
     gofumpt
     google-java-format
