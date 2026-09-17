@@ -95,6 +95,7 @@
       search = {
         default = "searxng";
         force = true;
+        privateDefault = "searxng";
         engines = {
           "searxng" = {
             name = "Searxng";
