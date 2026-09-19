@@ -12,6 +12,7 @@
     ./just.nix
     ./lang
     ./live-server.nix
+    ./mcp.nix
     ./net.nix
     ./nixvim
     ./opencode.nix
