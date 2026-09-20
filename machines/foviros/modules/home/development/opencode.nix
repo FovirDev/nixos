@@ -1,7 +1,8 @@
-{ ... }: {
+{ pkgs, ... }: {
   programs.opencode = {
     enable = true;
 
+    package = pkgs.unstable.opencode;
     enableMcpIntegration = true;
     tui.theme = "system";
     settings = {
