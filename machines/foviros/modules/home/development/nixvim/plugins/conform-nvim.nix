@@ -31,6 +31,7 @@
         ];
         "java" = [ "google-java-format" ];
         "nix" = [ "nixfmt" ];
+        "proto" = [ "buf format" ];
         "python" = [ "black" ];
         "rust" = [ "rustfmt" ];
         "sql" = [ "pg_format" ];

@@ -2,6 +2,7 @@
   imports = [
     # ./move_analyzer.nix
     ./asm_lsp.nix
+    ./buf_ls.nix
     ./clangd.nix
     ./cmake.nix
     ./cssls.nix
