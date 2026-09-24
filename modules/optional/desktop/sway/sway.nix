@@ -85,7 +85,7 @@
           };
           "HDMI-A-1" = {
             mode = "2560x1600@130Hz";
-            position = "1600 0";
+            position = "1707 0";
             transform = "270";
           };
         };
