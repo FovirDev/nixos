@@ -174,7 +174,6 @@
           "${mod}+s" = "exec screenshot-area";
           "${mod}+space" = "floating toggle";
           "${mod}+y" = "exec alacritty --class yazi -e yazi";
-          "--release Caps_Lock" = "exec swayosd-client --caps-lock";
           "Ctrl+Alt+Space" = "exec swayosd-client --playerctl play-pause";
           "Ctrl+Alt+n" = "exec playerctl next";
           "Ctrl+Alt+p" = "exec playerctl previous";
