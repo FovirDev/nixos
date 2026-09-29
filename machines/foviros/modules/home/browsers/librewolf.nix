@@ -97,6 +97,25 @@
         force = true;
         privateDefault = "searxng";
         engines = {
+          "github" = {
+            name = "GitHub";
+            urls = [
+              {
+                template = "https://github.com/search";
+                params = [
+                  {
+                    name = "q";
+                    value = "{searchTerms}";
+                  }
+                  {
+                    name = "type";
+                    value = "repositories";
+                  }
+                ];
+              }
+            ];
+            definedAliases = [ "@gh" ];
+          };
           "searxng" = {
             name = "Searxng";
             urls = [
