@@ -25,6 +25,7 @@ in
       rsync
       tldr
       tokei
+      wget
       wl-clipboard-rs
     ];
     sessionVariables.BAT_THEME = batTheme;
