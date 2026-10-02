@@ -35,5 +35,11 @@
       mode = "n";
       options.desc = "[G]itsigns [R]efresh";
     }
+    {
+      action = "<cmd>Gitsigns toggle_current_line_blame<CR>";
+      key = "<leader>gl";
+      mode = "n";
+      options.desc = "[G]itsigns [L]ine Blame";
+    }
   ];
 }
