@@ -11,6 +11,7 @@
     ./git.nix
     ./just.nix
     ./lang
+    ./litecli.nix
     ./live-server.nix
     ./mcp.nix
     ./net.nix
