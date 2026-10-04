@@ -41,5 +41,17 @@
       mode = "n";
       options.desc = "[G]itsigns [L]ine Blame";
     }
+    {
+      action = "<cmd>Gitsigns next_hunk<CR>";
+      key = "<leader>gn";
+      mode = "n";
+      options.desc = "[G]itsigns [N]ext Hunk";
+    }
+    {
+      action = "<cmd>Gitsigns prev_hunk<CR>";
+      key = "<leader>gp";
+      mode = "n";
+      options.desc = "[G]itsigns [P]rev Hunk";
+    }
   ];
 }
