@@ -74,6 +74,7 @@
       Preferences = {
         "browser.ctrlTab.sortByRecentlyUsed" = true;
         "browser.ml.linkPreview.enabled" = false;
+        "browser.nova.enabled" = false;
         "browser.sessionstore.max_tabs_undo" = 3;
         "browser.sessionstore.restore_on_demand" = true;
         "browser.sessionstore.restore_pinned_tabs_on_demand" = true;
