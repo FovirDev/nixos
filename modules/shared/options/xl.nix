@@ -90,6 +90,7 @@ in
         StateDirectory = "xl";
         SyslogIdentifier = "xl";
         RuntimeDirectory = "xl";
+        MemoryMax = "1G";
       };
     };
 
