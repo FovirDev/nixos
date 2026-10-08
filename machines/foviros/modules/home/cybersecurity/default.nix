@@ -4,6 +4,7 @@
     ghidra
     metasploit
     nmap
+    recon-ng
     sqlmap
     zap
   ];
