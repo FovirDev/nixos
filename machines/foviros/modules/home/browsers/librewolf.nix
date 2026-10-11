@@ -134,6 +134,7 @@
         };
       };
       settings = {
+        "browser.translations.automaticallyPopup" = false;
         "browser.uiCustomization.navBarWhenVerticalTabs" = ''
           [
             "back-button",
