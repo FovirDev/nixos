@@ -2,6 +2,7 @@
   imports = [
     # ./toggleterm.nix
     ./abolish.nix
+    ./aerial.nix
     ./bufferline.nix
     ./cmp-conventionalcommits.nix
     ./colorful-winsep.nix

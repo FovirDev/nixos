@@ -30,12 +30,6 @@
       options.desc = "Hover Doc";
     }
     {
-      action = "<cmd>Lspsaga outline<CR>";
-      key = "<leader>a";
-      mode = "n";
-      options.desc = "Toggle Outline";
-    }
-    {
       action = "<cmd>Lspsaga show_buf_diagnostics<CR>";
       key = "<leader>db";
       mode = "n";
