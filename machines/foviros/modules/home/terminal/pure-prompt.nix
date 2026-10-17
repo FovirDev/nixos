@@ -1,3 +1,3 @@
 { pkgs, ... }: {
-  home.packages = [ pkgs.pure-prompt ];
+  home.packages = [ pkgs.unstable.pure-prompt ];
 }
