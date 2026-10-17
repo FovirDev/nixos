@@ -37,9 +37,15 @@
     }
     {
       action = "<cmd>Gitsigns toggle_current_line_blame<CR>";
-      key = "<leader>gl";
+      key = "<leader>gbi";
       mode = "n";
-      options.desc = "[G]itsigns [L]ine Blame";
+      options.desc = "[G]itsigns [B]lame [I]nline";
+    }
+    {
+      action = "<cmd>Gitsigns blame_line<CR>";
+      key = "<leader>gbl";
+      mode = "n";
+      options.desc = "[G]itsigns [B]lame [L]ine";
     }
     {
       action = "<cmd>Gitsigns next_hunk<CR>";
