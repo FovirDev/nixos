@@ -23,7 +23,7 @@ in
       rclone
       rename
       rsync
-      tldr
+      tlrc
       tokei
       wget
       wl-clipboard-rs
