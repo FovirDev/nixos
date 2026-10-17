@@ -33,6 +33,8 @@ in
       gpt = "git push --tags";
       gpwt = "git push && git push --tags";
       grau = "git remote add upstream";
+      grbi2 = "git rebase --interactive HEAD~2";
+      grbi3 = "git rebase --interactive HEAD~3";
       grsp = "git restore -p";
       gs = "git switch";
       gsc = "git switch --create";
