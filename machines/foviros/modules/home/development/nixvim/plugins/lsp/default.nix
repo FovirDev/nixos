@@ -30,4 +30,13 @@
 
     inlayHints = true;
   };
+
+  keymaps = [
+    {
+      action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<CR>";
+      key = "<leader>ti";
+      mode = "n";
+      options.desc = "[T]oggle [I]nlay Hints";
+    }
+  ];
 }
