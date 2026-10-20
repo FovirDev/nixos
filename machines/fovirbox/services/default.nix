@@ -2,6 +2,7 @@
   imports = [
     # ../values/meet.nix
     # ./authelia.nix
+    # ./postgres.nix
     # ./social.nix
     # ./zeroclaw.nix
     ../values/sci.nix
@@ -16,7 +17,6 @@
     ./liwan.nix
     ./mytrix.nix
     ./openlist.nix
-    ./postgres.nix
     ./radicale.nix
     ./restic.nix
     ./rsshub.nix
