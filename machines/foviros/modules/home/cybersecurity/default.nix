@@ -6,6 +6,8 @@
     nmap
     recon-ng
     sqlmap
+    unstable.autopsy
+    unstable.sleuthkit
     zap
   ];
 }
