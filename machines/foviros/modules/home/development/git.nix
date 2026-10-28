@@ -1,10 +1,15 @@
 { ... }: {
+  home.file.".gitignore".text = ''
+    fovir-*
+  '';
+
   programs = {
     git = {
       enable = true;
 
       settings = {
         commit.gpgsign = true;
+        core.excludesFile = "~/.gitignore";
         diff.algorithm = "histogram";
         format.signoff = true;
         init.defaultBranch = "main";
