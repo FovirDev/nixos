@@ -1,3 +1,3 @@
 { pkgs, ... }: {
-  home.packages = with pkgs; [ motrix-next ];
+  home.packages = with pkgs; [ stable-motrix-next.motrix-next ];
 }

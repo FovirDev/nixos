@@ -17,6 +17,7 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nixpkgs-25-05.url = "github:nixos/nixpkgs/nixos-25.05";
     nixpkgs-25-11.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs-stable-motrix-next.url = "github:nixos/nixpkgs/060078a0b883eb0f0e50103d589b85c97d81aa50";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixvim.url = "github:nix-community/nixvim/nixos-26.05";
