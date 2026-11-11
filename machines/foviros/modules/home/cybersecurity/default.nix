@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     dsniff
     ghidra
+    hashcat
     metasploit
     nmap
     recon-ng
