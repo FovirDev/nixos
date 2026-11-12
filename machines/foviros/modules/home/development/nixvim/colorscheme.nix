@@ -51,6 +51,9 @@
             hl.NeoTreeWinSeparator = { fg = colors.border }
             hl.NormalFloat = { bg = colors.bg_dim }
             hl.SignColumn = { bg = colors.bg_main }
+            hl.GitSignsAdd = { bg = colors.none, fg = colors.fg_added_intense }
+            hl.GitSignsChange = { bg = colors.none, fg = colors.fg_changed_intense }
+            hl.GitSignsDelete = { bg = colors.none, fg =  colors.fg_removed_intense }
           end
         '';
       };
