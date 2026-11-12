@@ -1,14 +1,14 @@
 {
-	"data": "ENC[AES256_GCM,data:L9x3J2EmR6ng6VeWjcws83TrxNt3PB70krM8do0Vfz/1HinhCvFBbaezYD54qAJLSg17uHgi8Q==,iv:Gj9Qlzsq1QIJBKBtirCj5QhbP66z/4BW/xOsC2VUrHs=,tag:Zypto81rChfZ0ThflnOe9w==,type:str]",
+	"data": "ENC[AES256_GCM,data:uBbfInyIMJZtYnzxJZ6KsWcdbkyDgTVfvQ9i0PoLdfFb9ZLk2OI6AEqfgAtrQ4MxcAbAR3HKkA==,iv:fl2DBM4mIcsEitxeQhC2Fc6kLc65W4mrErrOLvtbVSA=,tag:stFlkDHi/zYVr7HbS33Ccg==,type:str]",
 	"sops": {
 		"age": [
 			{
-				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHZDdKUTdJbDJqUEZkQ1ha\nVER6QndmQ3BoNzgzU2tyWHlLQ2JvU2lwQ0NBCkxCblJPUy9QUm5ja2I2OG92Q2JP\ndmgreTh2Y0JZZFJtSHNNbXRXN0xNckEKLS0tIDVOUkVZVWRrTTJoU3V1RTlCRGc4\ndUVTZWdJZ2xKM2JSenkrb0dtOUZ4dk0Kmtcr2xueGM57ryOBo+0ZReJJMjak3Twn\nH9jdJJvy2IcDWEvQGmDZND4M3Zn8rnl7bW57I/efsoh854SG7e1UjA==\n-----END AGE ENCRYPTED FILE-----\n",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA3SjZxWXYyYUl5YjV1My9s\nMkxpMnZ1V245eWtDMkt1TjkzTTlSOU9RVEI0Ci9GOC9Ua2tocWQ4RXZ0WCtzZkM5\ncjZ5U3BEQkdmTnZKOVdmaVBwK1RTaEEKLS0tIFJLbHpxRElOWmlkOGJ2TE9OT2xK\ncEJ3dEl3cnJIYXgrc0IwZ1Y0dGt4alkK2y9PSqtMstfsGNZkqVRz0wve1ep0GVSG\nBwKfdnym6IgJOr0jX+N/EzRoF3RNvT/d4cx+sWShG+cEqHQOpOh9eQ==\n-----END AGE ENCRYPTED FILE-----\n",
 				"recipient": "age172xqa230e5vwzsdajc6ak235qvg448nf9g02xjp80w3vknsacd3qszzc87"
 			}
 		],
-		"lastmodified": "2026-10-20T14:24:23Z",
-		"mac": "ENC[AES256_GCM,data:SYQutzEBnTMZHWsU+rVIuoKAwNpENcYSrdC1ZOsJ4UeQwpMCnEtCxO+EZvlT2Em2ZrA0r8GCrAj7igKbOi0DdmaHkgjfJSDRdpPI75RGV6UBnuYEoGSQO2zQRDTvs8g2CZTrtS/ylrFPESiznb/DetNmCK0b+Zx1ZPWp28q9Puk=,iv:Pdhvzf1IjYJ3JQen67DTVO2RI2o2FoCWW3OZx4BW1x4=,tag:xS6JXTOe27CWDAyXZrEF6Q==,type:str]",
+		"lastmodified": "2026-11-12T09:15:07Z",
+		"mac": "ENC[AES256_GCM,data:DmsWFUna65prx1eBEa4znHqALi0u64oprmHvImcHgc+J2Hj1DMSHctdprWzBAHuwR6MEqXGm7Hp7NQ9AbzqrWfXiWQsIjR2BgOiVuZ6DpL/9VqNbBF24eHzA1G4kBDP4Qno6+ybXFSGqOsFDg/zcFs3wLhkb7p52MpI2jbiGqNQ=,iv:PVxW1dMSJ/qFWmIazs1Mr44zik3mSiN4leEMNwZBbsY=,tag:3xbmOxAfytLaQzs87xMsiw==,type:str]",
 		"version": "3.13.3"
 	}
 }
