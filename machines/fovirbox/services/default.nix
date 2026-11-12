@@ -5,6 +5,7 @@
     # ./postgres.nix
     # ./social.nix
     # ./zeroclaw.nix
+    ../values/komari-agent.nix
     ../values/sci.nix
     ./bentopdf.nix
     ./bird-lg.nix
