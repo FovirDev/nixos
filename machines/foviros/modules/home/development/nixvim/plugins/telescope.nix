@@ -36,6 +36,10 @@
           "--glob"
           "!**/.git/*"
         ];
+        git_status = {
+          initial_mode = "normal";
+          select_current = true;
+        };
       };
     };
     keymaps = {
