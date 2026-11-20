@@ -2,10 +2,38 @@
   programs.zellij = {
     enable = true;
 
+    layouts = {
+      compact-top = {
+        layout = {
+          _children = [
+            {
+              default_tab_template = {
+                _children = [
+                  {
+                    pane = {
+                      size = 1;
+                      borderless = true;
+
+                      plugin = {
+                        location = "zellij:compact-bar";
+                      };
+                    };
+                  }
+                  {
+                    children = { };
+                  }
+                ];
+              };
+            }
+          ];
+        };
+      };
+    };
+
     settings = {
       copy_command = "wl-copy";
       copy_on_select = true;
-      default_layout = "compact";
+      default_layout = "compact-top";
       default_shell = "${pkgs.zsh}/bin/zsh";
       mouse_mode = true;
       pane_frames = false;
