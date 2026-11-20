@@ -20,5 +20,6 @@
     ./podman-compose.nix
     ./usbutils.nix
     ./wakatime.nix
+    ./zellij.nix
   ];
 }
