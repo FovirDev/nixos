@@ -17,6 +17,21 @@
         normal.family = "JetBrainsMono Nerd Font Mono";
         size = 12;
       };
+      keyboard = {
+        bindings = [
+          {
+            action = "ToggleViMode";
+            key = "Escape";
+            mods = "Alt";
+          }
+          {
+            action = "ToggleViMode";
+            key = "A";
+            mode = "Vi";
+            mods = "Shift";
+          }
+        ];
+      };
       terminal.shell = {
         program = "${pkgs.zellij}/bin/zellij";
         args = [

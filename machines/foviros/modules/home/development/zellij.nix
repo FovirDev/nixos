@@ -73,7 +73,7 @@
           }
           {
             bind = {
-              _args = [ "Alt Esc" ];
+              _args = [ "Ctrl s" ];
               SwitchToMode._args = [ "scroll" ];
             };
           }
@@ -81,7 +81,7 @@
         scroll._children = [
           {
             bind = {
-              _args = [ "A" ];
+              _args = [ "Esc" ];
               ScrollToBottom = { };
               SwitchToMode._args = [ "normal" ];
             };
