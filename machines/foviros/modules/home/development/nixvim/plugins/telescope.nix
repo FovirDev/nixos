@@ -35,6 +35,7 @@
           "--hidden"
           "--glob"
           "!**/.git/*"
+          "--no-ignore-global"
         ];
         git_status = {
           initial_mode = "normal";
