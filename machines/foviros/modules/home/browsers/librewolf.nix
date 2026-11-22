@@ -134,6 +134,7 @@
         };
       };
       settings = {
+        "browser.tabs.warnOnClose" = true;
         "browser.translations.automaticallyPopup" = false;
         "browser.uiCustomization.navBarWhenVerticalTabs" = ''
           [
@@ -215,6 +216,8 @@
             "newElementCount": 2
           }
         '';
+        "browser.warnOnQuit" = true;
+        "browser.warnOnQuitShortcut" = true;
         "devtools.toolbox.host" = "right";
         "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
         "privacy.clearOnShutdown_v2.cache" = false;
