@@ -23,5 +23,6 @@
     ./thunderbird.nix
     ./touchpad.nix
     ./unixtools.nix
+    ./yt-dlp.nix
   ];
 }
