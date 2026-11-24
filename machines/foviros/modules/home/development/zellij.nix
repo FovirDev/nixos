@@ -82,15 +82,6 @@
           {
             bind = {
               _args = [ "Esc" ];
-              ScrollToBottom = { };
-              SwitchToMode._args = [ "normal" ];
-            };
-          }
-          {
-            bind = {
-              _args = [ "y" ];
-              Copy = { };
-              ScrollToBottom = { };
               SwitchToMode._args = [ "normal" ];
             };
           }
