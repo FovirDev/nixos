@@ -2,6 +2,7 @@
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs; [
+      liberation_ttf
       lxgw-wenkai
       nerd-fonts.jetbrains-mono
       noto-fonts
