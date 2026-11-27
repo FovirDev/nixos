@@ -32,6 +32,7 @@
         dns_enabled = true;
       };
       dockerCompat = true;
+      dockerSocket.enable = true;
     };
   };
 }
