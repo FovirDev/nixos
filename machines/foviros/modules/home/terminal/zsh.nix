@@ -36,6 +36,7 @@ in
       grbi2 = "git rebase --interactive HEAD~2";
       grbi3 = "git rebase --interactive HEAD~3";
       grsp = "git restore -p";
+      grstp = "git restore --staged -p";
       gs = "git switch";
       gsc = "git switch --create";
       gsd = "git switch $(git_develop_branch)";
