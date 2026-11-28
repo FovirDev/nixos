@@ -173,6 +173,7 @@
           "${mod}+r" = "exec restart-waybar";
           "${mod}+s" = "exec screenshot-area";
           "${mod}+space" = "floating toggle";
+          "${mod}+t" = "exec alacritty -e zsh";
           "${mod}+y" = "exec alacritty --class yazi -e yazi";
           "Ctrl+Alt+Space" = "exec swayosd-client --playerctl play-pause";
           "Ctrl+Alt+n" = "exec playerctl next";
